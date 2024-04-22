@@ -1,39 +1,53 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WikiFilms</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header >
-            <img class="tt" src="./cartelera.png" alt="">
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiFilms</title>
+</head>
+
+<body>
+    <header >
+        <img src="./cartelera.png" alt="Cartelera" width="1000">
+    </header>
+
+    <nav>
+        <ul>
+            <h4>
+                <li><a href="./peliculas.html">Películas</a></li>
+                <li><a href="./directores.html">Directores</a></li>
+                <li><a href="./generos.html">Géneros</a></li>
+                <li><a href="./anios.html">Años de estreno</a></li>
+                <li><a href="./paises.html">Países de origen</a></li>
+                <li><a href="./actores.html">Actores/Actrices</a></li>
+            </h4>
+        </ul>
+    </nav>
+    <br>
+
+    <main>
         <h2>La idea de este proyecto es crear una base de consulta, calificación y opinión respecto de la filmográfia mundial, donde los usuarios tendrán la posibilidad de hacer búsquedas por título, género, director, año de estreno, país de origen o aquellas protagonizadas por un determinado actor / actriz.
         Ubicado el título se mostrará toda la información relacionada al mismo, incluyendo una reseña y la calificación dada por los usuarios.
         </h2>
-        <div>
-            <ul>
-                <h2>
-                    <li><a href="./peliculas.html">Título</a></li>
-                    <br>
-                    <li><a href="./directores.html">Director</a></li>
-                    <br>
-                    <li><a href="./generos.html">Género</a></li>
-                    <br>
-                    <li><a href="./anios.html">Año estreno</a></li>
-                    <br>
-                    <li><a href="./paises.html">País de origen</a></li>
-                    <br>
-                    <li><a href="./actores.html">Actor/Actriz</a></li>
-                </h2>
-            </ul>
-        </div>
-        
-    </body>
-    <footer>Desarrollada por Andrés Lattanzio. Derechos Reservados. 2024</footer>
-    </html>
+        <br>
+
+        <form action="./index.html" method="get">
+            <h3><p>Para suscribirse complete los datos a continuación y si lo desea envíenos sugerencias para el sitio</p></h3>
+            <input type="text" name="nombre" placeholder="Nombre"> <br><br>
+            <input type="text" name="apellido" placeholder="Apellido"> <br><br>
+            <input type="email" name="correo" placeholder="Mail"> <br><br>
+            <textarea name="sugerencias" id="sugerencias" cols="30" rows="10" placeholder="Sugerencias"></textarea>
+            <input type="submit" name="suscribir" value="Suscribir">
+        </form>
+
+    </main>
+    <br>
+</body>
+
+<footer>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</footer>
+
+</html>
 
 
 <!-- LISTA DESPLEGABLE + CUADRO DE TEXTO + BOTON BUSCAR
@@ -50,7 +64,7 @@
     <input type="button" value="Buscar">
 -->
 
-<!-- LISTA ORDENADA (Ordened List)
+<!-- LISTA ORDENADA (Ordered List)
     <ol>
         <li>Título</li>
         <li>Director</li>
@@ -60,7 +74,7 @@
     </ol>
 -->
 
-<!-- LISTA NO ORDENADA (Unordened List)
+<!-- LISTA NO ORDENADA (Unordered List)
     <ul>
         <li>Título</li>
         <li>Director</li>
