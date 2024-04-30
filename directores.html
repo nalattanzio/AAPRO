@@ -5,50 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WF Directores</title>
+    <link rel="stylesheet" href="./estilos/directores.css">
 </head>
 
-<body>
-    <header >
-        <a id="Indice"></a>
-        <img src="./cartelera.png" alt="" width="1000">
-    </header>
-
+ 
+<a id="indice"></a>
+<header >
     <nav>
-        <ul>
-            <h4>
-                <li><a href="./peliculas.html">Películas</a></li>
-                <li><a href="./generos.html">Géneros</a></li>
-                <li><a href="./anios.html">Años de estreno</a></li>
-                <li><a href="./paises.html">Países de origen</a></li>
-                <li><a href="./actores.html">Actores/Actrices</a></li>
-                <li><a href="./index.html">Página principal</a></li>
-            </h4>
-        </ul>
+        <div class="cabecera">
+            <p>WikiFilms, la web de los cinéfilos</p>
+        </div>
+       
+        <div class="MenuOpciones">
+            <table border="1">
+                <tr>
+                    <td><a class="dire" href="./peliculas.html">Películas</a></td>
+                    <td><a class="gene" href="./generos.html">Géneros</a></td>     
+                    <td><a class="anio" href="./anios.html">Años de estreno</a></td>                
+                    <td><a class="pais" href="./paises.html">Países de origen</a></td>                
+                    <td><a class="acto" href="./actores.html">Actores/Actrices</a></td>                
+                    <td><a class="cont" href="./contacto.html">Contacto</a></td>
+                    <td><a class="indi" href="./index.html">Página principal</a></td>
+                </tr>
+            </table>
+        </div>
+
     </nav>
-    <br>
+</header>
+
+<div class="BotonIndice">
+    <a href="#indice">Indice</a>
+</div>
     
     <main>
-        <section>
-            <h1>Búsqueda de películas por Director</h1>
+        <div class="IngresoDatos">
+
+            <div>
+                <h1>Búsqueda de películas por Director</h1>
+            </div>
 
             <form action="./directores.html" method="get">
                 <input type="text" name="nombreDirector" id="director" placeholder="Nombre del director">
-                <input type="submit" value="Buscar">
+                <input type="submit" value="Buscar" id="BotonBuscar">
             </form>
-            <br>
-        </section>
+            
+        </div>
 
-        <section>
-            <table border="1">
-                <tr>
-                    <td><img src="./Nolan.jpg" alt="Cristopher Nolan"></td>
-                    <td><h2>Biografía</h2></td>
-                    <td><h2>Filmografía</h2></td>
-                </tr>
-            </table>
-            <br>
-        </section>
+        <div class="Resultados">
+            <div class="Foto">
+                <img src="imagenes/Nolan.jpg" alt="Cristopher Nolan">
+            </div>
+            <div class="Biografia">
+                <h2>Biografía</h2>
+                <br>
+                <p>Christopher Edward Nolan es un director de cine, guionista, productor y editor británico. Desarrolló un interés por el cine desde una edad temprana. Después de estudiar literatura inglesa en el University College de Londres, debutó en el largometraje con Following.<br><br>
+                <u>Nacimiento:</u> 30 de julio de 1970 (edad 53 años), Westminster, Londres, Reino Unido.<br><br>
+                <u>Premios:</u> Premio Óscar al Mejor Director, MAS<br><br>
+                <u>Hermanos:</u> Jonathan Nolan, Matthew Francis Nolan<br><br>
+                <u>Trabajos editados:</u> Journal of a Navvy, Journal of a Jailbird, MAS<br><br>
+                <u>Hijos:</u> Flora Nolan, Magnus Nolan, Rory Nolan, Oliver Nolan<br><br>
+                <u>Cónyuge:</u> Emma Thomas (m. 1997).
+                </p>
+            </div>
+            <div class="Filmografia">
+                <h2>Filmografía</h2>
+                <br>
+                
+                <p>1997: Doodlebug</p>
+                <p>1998: Following</p>
+                <p>2000: Memento</p>
+                <p>2002: Insomnia</p>
+                <p>2005: Batman Begins</p>
+                <p>2006: The Prestige</p>
+                <p>2008: The Dark Knight</p>
+                <p>2010: Inception</p>
+                <p>2012: The Dark Knight Rises</p>
+                <p>2014: Interstellar</p>
+                <p>2015: Quay</p>
+                <p>2017: Dunkerque</p>
+                <p>2020: Tenet​</p>
+                <p>2023: Oppenheimer</p>
+            </div>
+        </div>
     </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
 
 <footer>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</footer>

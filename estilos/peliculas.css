@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    color-scheme: dark;*/
+    font-family: Tahoma;    
+    
+}
+
+body{
+    background-image: url(../imagenes/fondo.png);
+    background-size: 100%;
+    background-repeat:repeat-y;
+    /*margin-top: 0px;*/
+}
+
+.cabecera{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    align-content: center;
+}
+
+.cabecera p{
+    font-size: 48px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+}
+
+.MenuOpciones{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    background-color: red;
+    display: grid;
+    grid-template-columns: auto;
+    
+}
+
+.MenuOpciones td{
+    text-align: center;
+}
+
+.peli, .dire, .gene, .anio, .pais, .acto, .cont, .indi{
+    color: black;
+    font-weight: bold;
+    text-decoration-line: none;
+    text-align: center;
+}
+
+.IndiceAlfabetico{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 0;
+    align-content: center;
+}
+
+.IndiceAlfabetico div{
+    margin-top: 140px;
+    text-align: center;
+}   
+
+.IndiceAlfabetico table{
+    margin-top: 50px;
+    border: red solid;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color:gray;
+    box-shadow: 5px 4px 20px 0 black;
+    padding: 2px;
+    margin: 30px;
+}
+
+.IndiceAlfabetico caption{
+    font-size: large;
+    padding: 0 0 10px 0;
+    
+}
+
+.IndiceAlfabetico td{
+    text-align: center;
+    
+}
+
+.IndiceAlfabetico a{
+    text-decoration-line: none;
+}
+
+.BotonIndice{
+    width: auto;
+    height: auto;
+    padding: 6px;
+    background-color: black;
+    border: solid 2px red;
+    box-shadow: 5px 4px 20px 0 black;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;    
+}
+
+.BotonIndice a{
+    color: red;
+    text-decoration-line: none;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+}
+
+.NombresPeliculas{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    margin: 0 0 20px 30px;
+    background-color: lightgray;
+    border: solid 2px gray;
+    border-radius: 8px;
+    box-shadow: 5px 4px 20px 0 black;
+}
+
