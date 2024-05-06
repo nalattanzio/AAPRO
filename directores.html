@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WF Directores</title>
-    <link rel="stylesheet" href="./estilos/directores.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WF Directores</title>
+        <link rel="stylesheet" href="./estilos/directores.css">
+    </head>
 
- 
-<a id="indice"></a>
-<header >
-    <nav>
-        <div class="cabecera">
+    <body>
+
+        <header class="cabecera">
+
             <p>WikiFilms, la web de los cinéfilos</p>
-        </div>
-       
-        <div class="MenuOpciones">
-            <table border="1">
-                <tr>
-                    <td><a class="dire" href="./peliculas.html">Películas</a></td>
-                    <td><a class="gene" href="./generos.html">Géneros</a></td>     
-                    <td><a class="anio" href="./anios.html">Años de estreno</a></td>                
-                    <td><a class="pais" href="./paises.html">Países de origen</a></td>                
-                    <td><a class="acto" href="./actores.html">Actores/Actrices</a></td>                
-                    <td><a class="cont" href="./contacto.html">Contacto</a></td>
-                    <td><a class="indi" href="./index.html">Página principal</a></td>
-                </tr>
-            </table>
-        </div>
 
-    </nav>
-</header>
+            <nav>                    
+                <ul class="MenuOpciones">
+                    <li><a href="./actores.html">Actores/Actrices</a></li>                
+                    <li><a href="./anios.html">Años de estreno</a></li>                
+                    <li><a href="./generos.html">Géneros</a></li>     
+                    <li><a href="./paises.html">Países de origen</a></li>                
+                    <li><a href="./peliculas.html">Películas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./index.html">Página principal</a></li>
+                </ul>
+            </nav>
 
-<div class="BotonIndice">
-    <a href="#indice">Indice</a>
-</div>
-    
-    <main>
-        <div class="IngresoDatos">
+        </header>
+
+        <main>
+            
+            <section class="Ingreso">
+                <h1>Búsqueda de películas por Director</h1>
+
+                <form action="./directores.html" method="get">
+                    <input type="text" name="nombreDirector" id="director" placeholder="Nombre del director">
+                    <input type="submit" value="Buscar" id="BotonBuscar">
+                </form>
+            </section>
+
+            <section class="Respuesta">
+                <div class="Foto">
+                    <img src="./imagenes/Nolan.jpg" alt="Cristopher Nolan">
+                </div>
+
+                <div class="Bio">
+                    <h2>Biografía</h2>
+                    <br>
+                    <p>
+                        Christopher Edward Nolan es un director de cine, guionista, productor y editor británico. Desarrolló un interés por el cine desde una edad temprana. Después de estudiar literatura inglesa en el University College de Londres, debutó en el largometraje con Following.<br><br>
+                        <u>Nacimiento:</u> 30 de julio de 1970 (edad 53 años), Westminster, Londres, Reino Unido.<br><br>
+                        <u>Premios:</u> Premio Óscar al Mejor Director, MAS<br><br>
+                        <u>Hermanos:</u> Jonathan Nolan, Matthew Francis Nolan<br><br>
+                        <u>Trabajos editados:</u> Journal of a Navvy, Journal of a Jailbird, MAS<br><br>
+                        <u>Hijos:</u> Flora Nolan, Magnus Nolan, Rory Nolan, Oliver Nolan<br><br>
+                        <u>Cónyuge:</u> Emma Thomas (m. 1997).
+                    </p>
+                </div>
+
+                <div class="Film">
+                    <h2>Filmografía</h2>
+                    <br>
+                    <ul>
+                        <a href="#">1997: Doodlebug</a><br>   
+                        <a href="#">1998: Following</a><br>   
+                        <a href="#">2000: Memento</a><br>   
+                        <a href="#">2002: Insomnia</a><br>   
+                        <a href="#">2005: Batman Begins</a><br>   
+                        <a href="#">2006: The prestige</a><br>   
+                        <a href="#">2008: The Dark Knight</a><br>   
+                        <a href="#">2010: Inception</a><br>   
+                        <a href="#">2012: The Dark Knight Rises</a><br>   
+                        <a href="#">2014: Interstellar</a><br>   
+                        <a href="#">2015: Quay</a><br>   
+                        <a href="#">2017: Dunkerque</a><br>   
+                        <a href="#">2020: Tenet​</a><br>   
+                        <a href="#">2023: Oppenheimer</a><br>   
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
 
             <div>
-                <h1>Búsqueda de películas por Director</h1>
+                <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
             </div>
 
-            <form action="./directores.html" method="get">
-                <input type="text" name="nombreDirector" id="director" placeholder="Nombre del director">
-                <input type="submit" value="Buscar" id="BotonBuscar">
-            </form>
-            
-        </div>
-
-        <div class="Resultados">
-            <div class="Foto">
-                <img src="imagenes/Nolan.jpg" alt="Cristopher Nolan">
+            <div>
+                <a href="mailto:nalattanzio@gmail.com">
+                    <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
+                    
+                    <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
+    
+                    <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
+    
+                <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
             </div>
-            <div class="Biografia">
-                <h2>Biografía</h2>
-                <br>
-                <p>Christopher Edward Nolan es un director de cine, guionista, productor y editor británico. Desarrolló un interés por el cine desde una edad temprana. Después de estudiar literatura inglesa en el University College de Londres, debutó en el largometraje con Following.<br><br>
-                <u>Nacimiento:</u> 30 de julio de 1970 (edad 53 años), Westminster, Londres, Reino Unido.<br><br>
-                <u>Premios:</u> Premio Óscar al Mejor Director, MAS<br><br>
-                <u>Hermanos:</u> Jonathan Nolan, Matthew Francis Nolan<br><br>
-                <u>Trabajos editados:</u> Journal of a Navvy, Journal of a Jailbird, MAS<br><br>
-                <u>Hijos:</u> Flora Nolan, Magnus Nolan, Rory Nolan, Oliver Nolan<br><br>
-                <u>Cónyuge:</u> Emma Thomas (m. 1997).
-                </p>
-            </div>
-            <div class="Filmografia">
-                <h2>Filmografía</h2>
-                <br>
-                
-                <p>1997: Doodlebug</p>
-                <p>1998: Following</p>
-                <p>2000: Memento</p>
-                <p>2002: Insomnia</p>
-                <p>2005: Batman Begins</p>
-                <p>2006: The Prestige</p>
-                <p>2008: The Dark Knight</p>
-                <p>2010: Inception</p>
-                <p>2012: The Dark Knight Rises</p>
-                <p>2014: Interstellar</p>
-                <p>2015: Quay</p>
-                <p>2017: Dunkerque</p>
-                <p>2020: Tenet​</p>
-                <p>2023: Oppenheimer</p>
-            </div>
-        </div>
-    </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-</body>
-
-<footer>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</footer>
-
+        </footer>
+    </body>
 </html>

@@ -8,60 +8,128 @@
     <link rel="stylesheet" href="./estilos/actores.css">
 </head>
 
-<a id="Indice"></a>
-
 <body>
-    <header >
-        <nav>
-            <div class="cabecera">
-                
-                <div class="cartel">
-                    <img src="./imagenes/cartelera.png" alt="Cartelera">
-                </div>
-                
-                <div class="menu">
-                    <ul>
-                        <li><a class="peli" href="./peliculas.html">Películas</a></li>
-                        <li><a class="dire" href="./directores.html">Directores</a></li>
-                        <li><a class="gene" href="./generos.html">Géneros</a></li>     
-                        <li><a class="anio" href="./anios.html">Años de estreno</a></li>                
-                        <li><a class="pais" href="./paises.html">Países de origen</a></li>                
-                        <li><a class="cont" href="./contacto.html">Contacto</a></li>
-                        <li><a class="indi" href="./index.html">Página principal</a></li>
-                        
-                    </ul>
-                </div>
 
-            </div>
+    <header class="cabecera">
+
+        <p>WikiFilms, la web de los cinéfilos</p>
+
+        <nav>                    
+            <ul class="MenuOpciones">
+                <li><a href="./anios.html">Años de estreno</a></li>                
+                <li><a href="./directores.html">Directores</a></li>                
+                <li><a href="./generos.html">Géneros</a></li>     
+                <li><a href="./paises.html">Países de origen</a></li>                
+                <li><a href="./peliculas.html">Películas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./index.html">Página principal</a></li>
+            </ul>
         </nav>
+
     </header>
-    
+
     <main>
-        <section>
-            <div  class="IngresoDeDatos">
-                <h1>Búsqueda de películas por Actor / Actriz</h1>
-                <br>
-                <form action="./actores.html" method="get">
-                    <input type="text" name="nombreActor" id="actor" placeholder="Nombre del actor">
-                    <input type="submit" value="Buscar">
-                </form>
-            </div>
+        
+        <section class="Ingreso">
+            <h1>Búsqueda de películas por Actor</h1>
+
+            <form action="./actores.html" method="get">
+                <input type="text" name="nombreActor" id="actor" placeholder="Nombre del actor">
+                <input type="submit" value="Buscar" id="BotonBuscar">
+            </form>
         </section>
 
-        <section class="Resultados">
-            <div>
-                <table border="1">
-                    <tr>
-                        <td><img src="./imagenes/Bale.jpg" alt="Christian Bale"></td>
-                        <td><h2>Biografía</h2></td>
-                        <td><h2>Filmografía</h2></td>
-                    </tr>
-                </table>
+        <section class="Respuesta">
+            <div class="Foto">
+                <img src="./imagenes/Bale.jpg" alt="Christian Bale">
+            </div>
+
+            <div class="Bio">
+                <h2>Biografía</h2>
+                <br>
+                <p>
+                    Christian Charles Philip Bale es un actor británicoestadounidense nacido en Gales ganador de dos Globos de Oro, dos premios del SAG y un Óscar.Nacimiento: 30 de enero de 1974 (edad 50 años), Haverfordwest, Reino Unido. <br><br>
+                    <u>Nominaciones:</u> Premio Óscar al Mejor Actor. <br><br>
+                    <u>Hijas:</u> Luka Bale <br><br>
+                    <u>Cónyuge:</u> Sibi Blazic (m. 2000) <br><br>
+                    <u>Estatura:</u> 1.83 m <br><br>
+                    <u>Padres:</u> David Bale, Jenny James 
+                </p>
+            </div>
+
+            <div class="Film">
+                <h2>Filmografía</h2>
+                <br>
+                <ul>
+                    <a href="#">1987: Mio en la tierra del más allá</a><br>
+                    <a href="#">1987: El imperio del sol</a><br>
+                    <a href="#">1989: Enrique V</a><br>
+                    <a href="#">1992: La pandilla</a><br>
+                    <a href="#">1993: Rebeldes del swing</a><br>
+                    <a href="#">1994: La leyenda del príncipe	Amled</a><br>
+                    <a href="#">1995: Pocahontas</a><br>
+                    <a href="#">1996: Retrato de una dama</a><br>
+                    <a href="#">1996: El agente secreto</a><br>
+                    <a href="#">1997: Metroland</a><br>
+                    <a href="#">1998: Velvet Goldmine</a><br>
+                    <a href="#">1998: Todos los animales pequeños</a><br>
+                    <a href="#">1999: Sueño de una noche de verano</a><br>
+                    <a href="#">2000: American Psycho</a><br>
+                    <a href="#">2000: Shaft</a><br>
+                    <a href="#">2001: La mandolina del capitán Corelli</a><br>
+                    <a href="#">2002: Laurel Canyon</a><br>
+                    <a href="#">2002: Reign of Fire</a><br>
+                    <a href="#">2002: Equilibrium</a><br>
+                    <a href="#">2004: El maquinista</a><br>
+                    <a href="#">2004: Howl no Ugoku Shiro</a><br>
+                    <a href="#">2005: Batman Begins</a><br>
+                    <a href="#">2005: Tiempo para morir</a><br>
+                    <a href="#">2005: El nuevo mundo</a><br>
+                    <a href="#">2006: Rescate al amanecer</a><br>
+                    <a href="#">2006: The Prestige</a><br>
+                    <a href="#">2007: El tren de las 3:10</a><br>
+                    <a href="#">2007: I'm Not There</a><br>
+                    <a href="#">2008: The Dark Knight</a><br>
+                    <a href="#">2009: Terminator Salvation</a><br>
+                    <a href="#">2009: Enemigos públicos</a><br>
+                    <a href="#">2010: The Fighter</a><br>
+                    <a href="#">2011: Las flores de la guerra</a><br>
+                    <a href="#">2012: The Dark Knight Rises</a><br>
+                    <a href="#">2013: La ley del más fuerte</a><br>
+                    <a href="#">2013: American Hustle</a><br>
+                    <a href="#">2014: Exodus: Dioses y reyes</a><br>
+                    <a href="#">2015: Knight of Cups</a><br>
+                    <a href="#">2015: La gran apuesta</a><br>
+                    <a href="#">2016: La promesa</a><br>
+                    <a href="#">2017: Hostiles</a><br>
+                    <a href="#">2018: Mowgli: La leyenda de la selva</a><br>
+                    <a href="#">2018: El vicio del poder</a><br>
+                    <a href="#">2019: Ford v Ferrari</a><br>
+                    <a href="#">2022: Thor: Amor y Trueno</a><br>
+                    <a href="#">2022: Amsterdam</a><br>
+                    <a href="#">2022: Los crímenes de la academia</a><br>
+                    <a href="#">2023: El chico y la garza</a><br>
+                </ul>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div>
+            <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
+        </div>
+        <div>
+            <a href="mailto:nalattanzio@gmail.com">
+                <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
+                
+                <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
+
+                <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
+
+            <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
+
+
+        </div>
+    </footer>
 </body>
-
-<footer>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</footer>
-
 </html>

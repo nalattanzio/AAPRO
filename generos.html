@@ -8,37 +8,28 @@
     <link rel="stylesheet" href="./estilos/generos.css">
 </head>
 
-<a id="Indice"></a>
-
-
 <body>
-    <header >
-        <nav>
-            <div class="cabecera">
 
-                <div class="cartel">
-                    <img src="./imagenes/cartelera.png" alt="Cartelera">
-                </div>
-                
-                <div class="menu">
-                    <ul>
-                        <li><a class="peli" href="./peliculas.html">Películas</a></li>
-                        <li><a class="dire" href="./directores.html">Directores</a></li>
-                        <li><a class="anio" href="./anios.html">Años de estreno</a></li>                
-                        <li><a class="pais" href="./paises.html">Países de origen</a></li>                
-                        <li><a class="acto" href="./actores.html">Actores/Actrices</a></li>                
-                        <li><a class="cont" href="./contacto.html">Contacto</a></li>
-                        <li><a class="indi" href="./index.html">Página principal</a></li>
-                        
-                    </ul>
-                </div>
+    <header class="cabecera">
 
-            </div>
+        <p>WikiFilms, la web de los cinéfilos</p>
+
+        <nav>                    
+            <ul class="MenuOpciones">
+                <li><a href="./actores.html">Actores/Actrices</a></li>     
+                <li><a href="./anios.html">Años de estreno</a></li>                
+                <li><a href="./directores.html">Directores</a></li>                
+                <li><a href="./paises.html">Países de origen</a></li>                
+                <li><a href="./peliculas.html">Películas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./index.html">Página principal</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
-        <section>
+        <section class="Ingreso">
             <h1>Búsqueda de películas por Género</h1>
 
             <form action="./generos.html" method="get">
@@ -63,13 +54,35 @@
                     <option value="value18">Histórico</option>
                     <option value="value19">Deportes</option>
                 </select>
-                <input type="submit" value="Filtrar">
+                <input type="submit" value="Filtrar" id="BotonFiltrar">
             </form>
-            <br>
+        </section>
+
+        <section class="Respuesta">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa facere praesentium nesciunt consequatur, eaque, vel labore doloremque dolorem tenetur suscipit non, ea deleniti ut veritatis minus deserunt culpa cum amet nobis ex. Quasi in voluptatem molestiae, soluta quibusdam ipsa! Voluptatibus omnis suscipit porro perferendis in laboriosam veniam mollitia at? Consectetur ab dignissimos quos temporibus assumenda dicta tenetur beatae atque quis, veniam sunt reprehenderit voluptatum blanditiis debitis sed enim? Ducimus laudantium esse atque possimus! Labore fuga molestias fugit odit sed illum aperiam accusamus minima corporis repudiandae porro quisquam beatae, nobis nam optio dolores, itaque harum facilis aspernatur voluptates ex totam maiores!
+            </p>
         </section>
     </main>
-</body>
 
-<footer>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</footer>
+    <footer>
+
+        <div>
+            <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
+        </div>
+
+        <div>
+            <a href="mailto:nalattanzio@gmail.com">
+                <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
+                
+                <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
+
+                <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
+
+            <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
+        </div>
+
+    </footer>
+</body>
 
 </html>
