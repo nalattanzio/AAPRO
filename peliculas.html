@@ -4,72 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WF Peliculas</title>
+    <title>WikiFilms -> Peliculas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./estilos/peliculas.css">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <!--<script src="./funciones.js"></script> -->
 </head>
 
 <body>
-
-    <header class="cabecera" id="indice">
-
-        <p>WikiFilms, la web de los cinéfilos</p>
-
-        <nav>                    
-            <ul class="MenuOpciones">
-                <li><a href="./actores.html">Actores/Actrices</a></li>
-                <li><a href="./anios.html">Años de estreno</a></li>                
-                <li><a href="./directores.html">Directores</a></li>                
-                <li><a href="./generos.html">Géneros</a></li>     
-                <li><a href="./paises.html">Países de origen</a></li>                
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./index.html">Página principal</a></li>
-            </ul>
-        </nav>
-
+    <header id="indice">
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+            <a class="navbar-brand titulo" href="./index.html">WikiFilms</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./actores.html">Actores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./directores.html">Directores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./anios.html">Estreno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./generos.html">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paises.html">Países</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./peliculas.html">Películas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Suscribirse</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
 
+    <div class="botonIndice">
+        <a href="#indice">Indice</a>
+    </div>
+
     <main>
-
-        <div class="BotonIndice">
-            <a href="#indice">Indice</a>
+        <div class="encabezado">
+            <p>Búsqueda de películas por título</p>
         </div>
-    
-        <p class="titulo">Búsqueda de películas por título</p>
 
-
-            <ul class="IndiceAlfabetico">
-                <li><a href="#TitulosConA">A</a></li>
-                <li><a href="#TitulosConB">B</a></li>
-                <li><a href="#TitulosConC">C</a></li>
-                <li><a href="#TitulosConD">D</a></li>
-                <li><a href="#TitulosConE">E</a></li>
-                <li><a href="#TitulosConF">F</a></li>
-                <li><a href="#TitulosConG">G</a></li>
-                <li><a href="#TitulosConH">H</a></li>
-                <li><a href="#TitulosConI">I</a></li>
-                <li><a href="#TitulosConJ">J</a></li>
-                <li><a href="#TitulosConK">K</a></li>
-                <li><a href="#TitulosConL">L</a></li>
-                <li><a href="#TitulosConM">M</a></li>
-                <li><a href="#TitulosConN">N</a></li>
-                <li><a href="#TitulosConÑ">Ñ</a></li>
-                <li><a href="#TitulosConO">O</a></li>
-                <li><a href="#TitulosConP">P</a></li>
-                <li><a href="#TitulosConQ">Q</a></li>
-                <li><a href="#TitulosConR">R</a></li>
-                <li><a href="#TitulosConS">S</a></li>
-                <li><a href="#TitulosConT">T</a></li>
-                <li><a href="#TitulosConU">U</a></li>
-                <li><a href="#TitulosConV">V</a></li>
-                <li><a href="#TitulosConW">W</a></li>
-                <li><a href="#TitulosConX">X</a></li>
-                <li><a href="#TitulosConY">Y</a></li>
-                <li><a href="#TitulosConZ">Z</a></li>
+        <div>
+            <ul class="indiceAlfabetico">
+                <li><a href="#titulosConA">A</a></li>
+                <li><a href="#titulosConB">B</a></li>
+                <li><a href="#titulosConC">C</a></li>
+                <li><a href="#titulosConD">D</a></li>
+                <li><a href="#titulosConE">E</a></li>
+                <li><a href="#titulosConF">F</a></li>
+                <li><a href="#titulosConG">G</a></li>
+                <li><a href="#titulosConH">H</a></li>
+                <li><a href="#titulosConI">I</a></li>
+                <li><a href="#titulosConJ">J</a></li>
+                <li><a href="#titulosConK">K</a></li>
+                <li><a href="#titulosConL">L</a></li>
+                <li><a href="#titulosConM">M</a></li>
+                <li><a href="#titulosConN">N</a></li>
+                <li><a href="#titulosConÑ">Ñ</a></li>
+                <li><a href="#titulosConO">O</a></li>
+                <li><a href="#titulosConP">P</a></li>
+                <li><a href="#titulosConQ">Q</a></li>
+                <li><a href="#titulosConR">R</a></li>
+                <li><a href="#titulosConS">S</a></li>
+                <li><a href="#titulosConT">T</a></li>
+                <li><a href="#titulosConU">U</a></li>
+                <li><a href="#titulosConV">V</a></li>
+                <li><a href="#titulosConW">W</a></li>
+                <li><a href="#titulosConX">X</a></li>
+                <li><a href="#titulosConY">Y</a></li>
+                <li><a href="#titulosConZ">Z</a></li>
             </ul>
-
+        </div>
         
-        <div class="NombresPeliculas">
-            <h2><a id="TitulosConA">A </a></h2>
+        <div class="nombresPeliculas">
+            <h2><a id="titulosConA">A </a></h2>
             <ul>
                 <li><a href="">Alien</a></li>
                 <li><a href="">Amélie</a></li>
@@ -79,7 +101,7 @@
                 <li><a href="">Avengers: Infinity War</a></li>
             </ul>
 
-            <h2><a id="TitulosConB">B</a></h2>
+            <h2><a id="titulosConB">B</a></h2>
             <ul>
                 <li><a href="">Batman: The Dark Knight </a></li>
                 <li><a href="">Batman: The Dark Knight Rises </a></li>
@@ -88,7 +110,7 @@
                 <li><a href="">Bonnie and Clyde</a></li>
             </ul>
 
-            <h2><a id="TitulosConC">C</a></h2>
+            <h2><a id="titulosConC">C</a></h2>
             <ul>
                 <li><a href="">Casablanca </a></li>
                 <li><a href="">Ciudad de Dios </a></li>
@@ -97,14 +119,14 @@
                 <li><a href="">Corazón Valiente </a></li>
             </ul>
 
-            <h2><a id="TitulosConD">D</a></h2>
+            <h2><a id="titulosConD">D</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConE">E</a></h2>
+            <h2><a id="titulosConE">E</a></h2>
             <ul>
-                <li><a href="">El Caso Bourne </a></li>
+                <li><a href="" title="El Caso Bourne">El Caso Bourne </a></li>
                 <li><a href="">El Club de los Cinco </a></li>
                 <li><a href="">El Gran Lebowski </a></li>
                 <li><a href="">El Gran Truco </a></li>
@@ -120,12 +142,12 @@
                 <li><a href="">Expiación</a></li>
             </ul>
 
-            <h2><a id="TitulosConF">F</a></h2>
+            <h2><a id="titulosConF">F</a></h2>
             <ul>
                 <li><a href="">Forrest Gump</a></li>
             </ul>
 
-            <h2><a id="TitulosConG">G</a></h2>
+            <h2><a id="titulosConG">G</a></h2>
             <ul>
                 <li><a href="">Gladiador </a></li>
                 <li><a href="">Gone with the Wind </a></li>
@@ -134,29 +156,29 @@
                 <li><a href="">Gran Hotel Budapest </a></li>
             </ul>
 
-            <h2><a id="TitulosConH">H</a></h2>
+            <h2><a id="titulosConH">H</a></h2>
             <ul>
                 <li><a href="">Historia Americana X </a></li>
             </ul>
 
-            <h2><a id="TitulosConI">I</a></h2>
+            <h2><a id="titulosConI">I</a></h2>
             <ul>
                 <li><a href="">Inception </a></li>
                 <li><a href="">Infiltrados </a></li>
                 <li><a href="">Interstellar </a></li>
             </ul>
 
-            <h2><a id="TitulosConJ">J</a></h2>
+            <h2><a id="titulosConJ">J</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet. 
             </ul>
 
-            <h2><a id="TitulosConK">K</a></h2>
+            <h2><a id="titulosConK">K</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConL">L</a></h2>
+            <h2><a id="titulosConL">L</a></h2>
             <ul>
                 <li><a href="">La Bella y la Bestia </a></li>
                 <li><a href="">La Llegada </a></li>
@@ -166,47 +188,47 @@
                 <li><a href="">Los Intocables </a></li>
             </ul>
 
-            <h2><a id="TitulosConM">M</a></h2>
+            <h2><a id="titulosConM">M</a></h2>
             <ul>
                 <li><a href="">Matrix </a></li>
                 <li><a href="">Milla Verde </a></li>
             </ul>
 
-            <h2><a id="TitulosConN">N</a></h2>
+            <h2><a id="titulosConN">N</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConÑ">Ñ</a></h2>
+            <h2><a id="titulosConÑ">Ñ</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConO">O</a></h2>
+            <h2><a id="titulosConO">O</a></h2>
             <ul>
                 <li><a href="">One Flew Over the Cuckoo's Nest </a></li>
             </ul>
 
-            <h2><a id="TitulosConP">P</a></h2>
+            <h2><a id="titulosConP">P</a></h2>
             <ul>
                 <li><a href="">Pantera Negra </a></li>
                 <li><a href="">Psicosis </a></li>
                 <li><a href="">Pulp Fiction </a></li>
             </ul>
 
-            <h2><a id="TitulosConQ">Q</a></h2>
+            <h2><a id="titulosConQ">Q</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConR">R</a></h2>
+            <h2><a id="titulosConR">R</a></h2>
             <ul>
                 <li><a href="">Raiders of the Lost Ark </a></li>
                 <li><a href="">Rescatando al Soldado Ryan </a></li>
                 <li><a href="">Rey León </a></li>
             </ul>
 
-            <h2><a id="TitulosConS">S</a></h2>
+            <h2><a id="titulosConS">S</a></h2>
             <ul>
                 <li><a href="">Seven Samurai </a></li>
                 <li><a href="">Sexto Sentido </a></li>
@@ -219,38 +241,38 @@
                 <li><a href="">Sueños de Libertad </a></li>
             </ul>
 
-            <h2><a id="TitulosConT">T</a></h2>
+            <h2><a id="titulosConT">T</a></h2>
             <ul>
                 <li><a href="">The Blair Witch Project </a></li>
                 <li><a href="">Titanic </a></li>
             </ul>
 
-            <h2><a id="TitulosConU">U</a></h2>
+            <h2><a id="titulosConU">U</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConV">V</a></h2>
+            <h2><a id="titulosConV">V</a></h2>
             <ul>
                 <li><a href="">Volver al Futuro </a></li>
             </ul>
 
-            <h2><a id="TitulosConW">W</a></h2>
+            <h2><a id="titulosConW">W</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConX">X</a></h2>
+            <h2><a id="titulosConX">X</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConY">Y</a></h2>
+            <h2><a id="titulosConY">Y</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
 
-            <h2><a id="TitulosConZ">Z</a></h2>
+            <h2><a id="titulosConZ">Z</a></h2>
             <ul>
                 Lorem ipsum dolor sit amet.
             </ul>
@@ -258,23 +280,20 @@
     </main>
 
     <footer>
-
         <div>
-            <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
+            Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024
         </div>
-
         <div>
             <a href="mailto:nalattanzio@gmail.com">
                 <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
                 
-                <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
-
-                <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
-
-            <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
+            <a target="_blank" href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
+  
+            <a target="_blank" href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
+  
+            <a target="_blank" href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
         </div>
-
-    </footer>
-</body>
+      </footer>
+  </body>
 
 </html>

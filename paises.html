@@ -4,461 +4,479 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WF Peliculas</title>
+    <title>WikiFilms -> Paises</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos/index.css">
     <link rel="stylesheet" href="./estilos/paises.css">
+    <!--<script src="./funciones.js"></script> -->
 </head>
 
 <body>
-
-    <header class="cabecera" id="indice">
-
-        <p>WikiFilms, la web de los cinéfilos</p>
-
-        <nav>                    
-            <ul class="MenuOpciones">
-                <li><a href="./actores.html">Actores/Actrices</a></li>
-                <li><a href="./anios.html">Años de estreno</a></li>                
-                <li><a href="./directores.html">Directores</a></li>                
-                <li><a href="./generos.html">Géneros</a></li>     
-                <li><a href="./peliculas.html">Películas</a></li>                
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./index.html">Página principal</a></li>
-            </ul>
-        </nav>
-
+    <header id="indice">
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand titulo" href="./index.html">WikiFilms</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./actores.html">Actores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./directores.html">Directores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./anios.html">Estreno</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./generos.html">Géneros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./paises.html">Países</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./peliculas.html">Películas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contacto.html">Suscribirse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     </header>
-    
+  
+    <div class="botonIndice">
+        <a href="#indice">Indice</a>
+    </div>
+
     <main>
+        <div class="encabezado">
+            <p>Búsqueda de películas por país</p>
+        </div>
+
+        <div>
+            <ul class="indiceAlfabetico">
+                <li><a href="#paisesConA">A</a></li>
+                <li><a href="#paisesConB">B</a></li>
+                <li><a href="#paisesConC">C</a></li>
+                <li><a href="#paisesConD">D</a></li>
+                <li><a href="#paisesConE">E</a></li>
+                <li><a href="#paisesConF">F</a></li>
+                <li><a href="#paisesConG">G</a></li>
+                <li><a href="#paisesConH">H</a></li>
+                <li><a href="#paisesConI">I</a></li>
+                <li><a href="#paisesConJ">J</a></li>
+                <li><a href="#paisesConK">K</a></li>
+                <li><a href="#paisesConL">L</a></li>
+                <li><a href="#paisesConM">M</a></li>
+                <li><a href="#paisesConN">N</a></li>
+                <li><a href="#paisesConÑ">Ñ</a></li>
+                <li><a href="#paisesConO">O</a></li>
+                <li><a href="#paisesConP">P</a></li>
+                <li><a href="#paisesConQ">Q</a></li>
+                <li><a href="#paisesConR">R</a></li>
+                <li><a href="#paisesConS">S</a></li>
+                <li><a href="#paisesConT">T</a></li>
+                <li><a href="#paisesConU">U</a></li>
+                <li><a href="#paisesConV">V</a></li>
+                <li><a href="#paisesConW">W</a></li>
+                <li><a href="#paisesConX">X</a></li>
+                <li><a href="#paisesConY">Y</a></li>
+                <li><a href="#paisesConZ">Z</a></li>
+            </ul>
+        </div>
+
+        <div class="nombresPaises">
+            <form action="./paises.html" method="get">
+                <h2><a id="paisesConA">A </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Afganistán</li>
+                        <li><input type="radio" name="pais"> Albania</li>
+                        <li><input type="radio" name="pais"> Alemania</li>
+                        <li><input type="radio" name="pais"> Andorra</li>
+                        <li><input type="radio" name="pais"> Angola</li>
+                        <li><input type="radio" name="pais"> Antigua y Barbuda</li>
+                        <li><input type="radio" name="pais"> Arabia Saudita</li>
+                        <li><input type="radio" name="pais"> Argelia</li>
+                        <li><input type="radio" name="pais"> Argentina</li>
+                        <li><input type="radio" name="pais"> Armenia</li>
+                        <li><input type="radio" name="pais"> Australia</li>
+                        <li><input type="radio" name="pais"> Austria</li>
+                        <li><input type="radio" name="pais"> Azerbaiyán</li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+                
+                <h2><a id="paisesConB">B </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Bahamas</li>
+                        <li><input type="radio" name="pais"> Bahréin</li>
+                        <li><input type="radio" name="pais"> Bangladesh</li>
+                        <li><input type="radio" name="pais"> Barbados</li>
+                        <li><input type="radio" name="pais"> Bélgica</li>
+                        <li><input type="radio" name="pais"> Belice</li>                <li><input type="radio" name="pais"> Benín</li>               <li><input type="radio" name="pais"> Bielorrusia</li>
+                        <li><input type="radio" name="pais"> Birmania </li>
+                        <li><input type="radio" name="pais"> Bolivia</li>
+                        <li><input type="radio" name="pais"> Bosnia y Herzegovina</li>
+                        <li><input type="radio" name="pais"> Botsuana</li>
+                        <li><input type="radio" name="pais"> Brasil</li>                <li><input type="radio" name="pais"> Brunéi</li>                <li><input type="radio" name="pais"> Bulgaria</li>
+                        <li><input type="radio" name="pais"> Burkina Faso</li>
+                        <li><input type="radio" name="pais"> Burundi</li>
+                        <li><input type="radio" name="pais"> Bután</li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+                
+                <h2><a id="paisesConC">C </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="país"> Cabo Verde </li>
+                        <li><input type="radio" name="país"> Camboya    </li>
+                        <li><input type="radio" name="país"> Camerún    </li>
+                        <li><input type="radio" name="país"> Canadá     </li>
+                        <li><input type="radio" name="país"> Catar      </li>
+                        <li><input type="radio" name="país"> Chad       </li>
+                        <li><input type="radio" name="país"> Chile      </li>
+                        <li><input type="radio" name="país"> China      </li>
+                        <li><input type="radio" name="país"> Chipre     </li>
+                        <li><input type="radio" name="país"> Ciudad del Vaticano </li>
+                        <li><input type="radio" name="país"> Colombia            </li>
+                        <li><input type="radio" name="país"> Comoras             </li>
+                        <li><input type="radio" name="país"> Corea del Norte     </li>
+                        <li><input type="radio" name="país"> Corea del Sur       </li>
+                        <li><input type="radio" name="país"> Costa de Marfil     </li>
+                        <li><input type="radio" name="país"> Costa Rica          </li>
+                        <li><input type="radio" name="país"> Croacia             </li>
+                        <li><input type="radio" name="país"> Cuba                </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+                
+                <h2><a id="paisesConD">D </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li> <input type="radio" name="pais"> Dinamarca</li>
+                        <li><input type="radio" name="pais"> Dominica</li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+                
+                <h2><a id="paisesConE">E </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Ecuador                 </li>
+                        <li><input type="radio" name="pais"> Egipto                  </li>
+                        <li><input type="radio" name="pais"> El Salvador             </li>
+                        <li><input type="radio" name="pais"> Emiratos Árabes Unidos  </li>
+                        <li><input type="radio" name="pais"> Eritrea                 </li>
+                        <li><input type="radio" name="pais"> Eslovaquia              </li>
+                        <li><input type="radio" name="pais"> Eslovenia               </li>
+                        <li><input type="radio" name="pais"> España                  </li>
+                        <li><input type="radio" name="pais"> Estados Unidos          </li>
+                        <li><input type="radio" name="pais"> Estonia                 </li>
+                        <li><input type="radio" name="pais"> Etiopía                 </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConF">F </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Filipinas   </li>
+                        <li><input type="radio" name="pais"> Finlandia   </li>
+                        <li><input type="radio" name="pais"> Fiyi        </li>
+                        <li><input type="radio" name="pais"> Francia     </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConG">G </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Gabón   </li>
+                        <li><input type="radio" name="pais"> Gambia  </li>
+                        <li><input type="radio" name="pais"> Georgia </li>
+                        <li><input type="radio" name="pais"> Ghana   </li>
+                        <li><input type="radio" name="pais"> Granada </li>
+                        <li><input type="radio" name="pais"> Grecia      </li>
+                        <li><input type="radio" name="pais"> Guatemala   </li>
+                        <li><input type="radio" name="pais"> Guinea      </li>
+                        <li><input type="radio" name="pais"> Guinea-Bisáu</li>
+                        <li><input type="radio" name="pais"> Guinea Ecuatorial   </li>
+                        <li><input type="radio" name="pais"> Guyana              </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConH">H </a></h2>            
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Haití       </li>
+                        <li><input type="radio" name="pais"> Honduras    </li>
+                        <li><input type="radio" name="pais"> Hungría     </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConI">I </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> India           </li>
+                        <li><input type="radio" name="pais"> Indonesia       </li>
+                        <li><input type="radio" name="pais"> Irak            </li>
+                        <li><input type="radio" name="pais"> Irán            </li>
+                        <li><input type="radio" name="pais"> Irlanda         </li>
+                        <li><input type="radio" name="pais"> Islandia        </li>
+                        <li><input type="radio" name="pais"> Islas Marshall  </li>
+                        <li><input type="radio" name="pais"> Islas Salomón   </li>
+                        <li><input type="radio" name="pais"> Israel          </li>
+                        <li><input type="radio" name="pais"> Italia          </li>
+                    </ul>    
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConJ">J </a></h2>         
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Jamaica </li>
+                        <li><input type="radio" name="pais"> Japón   </li>
+                        <li><input type="radio" name="pais"> Jordania</li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConK">K </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Kazajistán  </li>
+                        <li><input type="radio" name="pais"> Kenia       </li>
+                        <li><input type="radio" name="pais"> Kirguistán  </li>
+                        <li><input type="radio" name="pais"> Kiribati    </li>
+                        <li><input type="radio" name="pais"> Kuwait      </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConL">L </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Laos            </li>
+                        <li><input type="radio" name="pais"> Lesoto          </li>
+                        <li><input type="radio" name="pais"> Letonia         </li>
+                        <li><input type="radio" name="pais"> Líbano          </li>
+                        <li><input type="radio" name="pais"> Liberia         </li>
+                        <li><input type="radio" name="pais"> Libia           </li>
+                        <li><input type="radio" name="pais"> Liechtenstein   </li>
+                        <li><input type="radio" name="pais"> Lituania        </li>
+                        <li><input type="radio" name="pais"> Luxemburgo      </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConM">M </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Macedonia   </li>
+                        <li><input type="radio" name="pais"> Madagascar  </li>
+                        <li><input type="radio" name="pais"> Malasia     </li>
+                        <li><input type="radio" name="pais"> Malaui      </li>
+                        <li><input type="radio" name="pais"> Maldivas    </li>
+                        <li><input type="radio" name="pais"> Malí        </li>
+                        <li><input type="radio" name="pais"> Malta       </li>
+                        <li><input type="radio" name="pais"> Marruecos   </li>
+                        <li><input type="radio" name="pais"> Mauricio    </li>
+                        <li><input type="radio" name="pais"> Mauritania  </li>
+                        <li><input type="radio" name="pais"> México      </li>
+                        <li><input type="radio" name="pais"> Micronesia  </li>
+                        <li><input type="radio" name="pais"> Moldavia    </li>
+                        <li><input type="radio" name="pais"> Mónaco      </li>
+                        <li><input type="radio" name="pais"> Mongolia    </li>
+                        <li><input type="radio" name="pais"> Montenegro  </li>
+                        <li><input type="radio" name="pais"> Mozambique  </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConN">N </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Namibia     </li>
+                        <li><input type="radio" name="pais"> Nauru       </li>
+                        <li><input type="radio" name="pais"> Nepal       </li>
+                        <li><input type="radio" name="pais"> Nicaragua   </li>
+                        <li><input type="radio" name="pais"> Níger       </li>
+                        <li><input type="radio" name="pais"> Nigeria     </li>
+                        <li><input type="radio" name="pais"> Noruega     </li>
+                        <li><input type="radio" name="pais"> Nueva Zelanda </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+                
+                <h2><a id="paisesConO">O </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Omán </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConP">P </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Países Bajos</li>
+                        <li><input type="radio" name="pais"> Pakistán    </li>
+                        <li><input type="radio" name="pais"> Palaos      </li>
+                        <li><input type="radio" name="pais"> Panamá      </li>
+                        <li><input type="radio" name="pais"> Papúa Nueva Guinea </li>
+                        <li><input type="radio" name="pais"> Paraguay    </li>
+                        <li><input type="radio" name="pais"> Perú        </li>
+                        <li><input type="radio" name="pais"> Polonia     </li>
+                        <li><input type="radio" name="pais"> Portugal    </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConQ">Q </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>      
+
+                <h2><a id="paisesConR">R </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Reino Unido </li>
+                        <li><input type="radio" name="pais"> República Centroafricana </li>
+                        <li><input type="radio" name="pais"> República Checa </li>
+                        <li><input type="radio" name="pais"> República del Congo </li>
+                        <li><input type="radio" name="pais"> República Dominicana </li>
+                        <li><input type="radio" name="pais"> República Sudafricana </li>
+                        <li><input type="radio" name="pais"> Ruanda </li>
+                        <li><input type="radio" name="pais"> Rumania </li>
+                        <li><input type="radio" name="pais"> Rusia </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConS">S </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Samoa </li>
+                        <li><input type="radio" name="pais"> San Cristóbal y Nieves </li>
+                        <li><input type="radio" name="pais"> San Marino </li>
+                        <li><input type="radio" name="pais"> San Vicente y las Granadinas </li>
+                        <li><input type="radio" name="pais"> Santa Lucía </li>
+                        <li><input type="radio" name="pais"> Santo Tomé y Príncipe </li>
+                        <li><input type="radio" name="pais"> Senegal </li>
+                        <li><input type="radio" name="pais"> Serbia </li>
+                        <li><input type="radio" name="pais"> Seychelles </li>
+                        <li><input type="radio" name="pais"> Sierra Leona </li>
+                        <li><input type="radio" name="pais"> Singapur </li>
+                        <li><input type="radio" name="pais"> Siria </li>
+                        <li><input type="radio" name="pais"> Somalia </li>
+                        <li><input type="radio" name="pais"> Sri Lanka </li>
+                        <li><input type="radio" name="pais"> Suazilandia </li>
+                        <li><input type="radio" name="pais"> Sudán </li>
+                        <li><input type="radio" name="pais"> Sudán del Sur </li>
+                        <li><input type="radio" name="pais"> Suecia </li>
+                        <li><input type="radio" name="pais"> Suiza </li>
+                        <li><input type="radio" name="pais"> Surinam </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConT">T </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Tailandia </li>
+                        <li><input type="radio" name="pais"> Tanzania </li>
+                        <li><input type="radio" name="pais"> Tayikistán </li>
+                        <li><input type="radio" name="pais"> Timor Oriental </li>
+                        <li><input type="radio" name="pais"> Togo </li>
+                        <li><input type="radio" name="pais"> Tonga </li>
+                        <li><input type="radio" name="pais"> Trinidad y Tobago </li>
+                        <li><input type="radio" name="pais"> Túnez </li>
+                        <li><input type="radio" name="pais"> Turkmenistán </li>
+                        <li><input type="radio" name="pais"> Turquía </li>
+                        <li><input type="radio" name="pais"> Tuvalu </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConU">U </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Ucrania </li>
+                        <li><input type="radio" name="pais"> Uganda </li>
+                        <li><input type="radio" name="pais"> Uruguay </li>
+                        <li><input type="radio" name="pais"> Uzbekistán </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConV">V </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Vanuatu </li>
+                        <li><input type="radio" name="pais"> Venezuela </li>
+                        <li><input type="radio" name="pais"> Vietnam </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConW">W </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        Lorem ipsum dolor sit amet.
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConY">Y </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Yemen </li>
+                        <li><input type="radio" name="pais"> Yibuti </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+
+                <h2><a id="paisesConZ">Z </a></h2>
+                <div class="listaDePaises">
+                    <ul>
+                        <li><input type="radio" name="pais"> Zambia </li>
+                        <li><input type="radio" name="pais"> Zimbabue </li>
+                    </ul>
+                    <input type="submit" value="Filtrar"id="BotonFiltrar">
+                </div>
+            </form>
         
-            <div class="BotonIndice">
-                <a href="#indice">Indice</a>
-            </div>
-        
-            <p class="titulo">Búsqueda de películas por país</p>
-            
-            <div>
-                <ul class="IndiceAlfabetico">
-                    <li><a href="#PaisesConA">A</a></li>
-                    <li><a href="#PaisesConB">B</a></li>
-                    <li><a href="#PaisesConC">C</a></li>
-                    <li><a href="#PaisesConD">D</a></li>
-                    <li><a href="#PaisesConE">E</a></li>
-                    <li><a href="#PaisesConF">F</a></li>
-                    <li><a href="#PaisesConG">G</a></li>
-                    <li><a href="#PaisesConH">H</a></li>
-                    <li><a href="#PaisesConI">I</a></li>
-                    <li><a href="#PaisesConJ">J</a></li>
-                    <li><a href="#PaisesConK">K</a></li>
-                    <li><a href="#PaisesConL">L</a></li>
-                    <li><a href="#PaisesConM">M</a></li>
-                    <li><a href="#PaisesConN">N</a></li>
-                    <li><a href="#PaisesConÑ">Ñ</a></li>
-                    <li><a href="#PaisesConO">O</a></li>
-                    <li><a href="#PaisesConP">P</a></li>
-                    <li><a href="#PaisesConQ">Q</a></li>
-                    <li><a href="#PaisesConR">R</a></li>
-                    <li><a href="#PaisesConS">S</a></li>
-                    <li><a href="#PaisesConT">T</a></li>
-                    <li><a href="#PaisesConU">U</a></li>
-                    <li><a href="#PaisesConV">V</a></li>
-                    <li><a href="#PaisesConW">W</a></li>
-                    <li><a href="#PaisesConX">X</a></li>
-                    <li><a href="#PaisesConY">Y</a></li>
-                    <li><a href="#PaisesConZ">Z</a></li>
-                </ul>
-            </div>
-
-            <div class="NombresPaises">
-                <form action="./paises.html" method="get">
-                    <h2><a id="PaisesConA">A </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Afganistán</li>
-                            <li><input type="radio" name="pais"> Albania</li>
-                            <li><input type="radio" name="pais"> Alemania</li>
-                            <li><input type="radio" name="pais"> Andorra</li>
-                            <li><input type="radio" name="pais"> Angola</li>
-                            <li><input type="radio" name="pais"> Antigua y Barbuda</li>
-                            <li><input type="radio" name="pais"> Arabia Saudita</li>
-                            <li><input type="radio" name="pais"> Argelia</li>
-                            <li><input type="radio" name="pais"> Argentina</li>
-                            <li><input type="radio" name="pais"> Armenia</li>
-                            <li><input type="radio" name="pais"> Australia</li>
-                            <li><input type="radio" name="pais"> Austria</li>
-                            <li><input type="radio" name="pais"> Azerbaiyán</li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                    
-                    <h2><a id="PaisesConB">B </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Bahamas</li>
-                            <li><input type="radio" name="pais"> Bahréin</li>
-                            <li><input type="radio" name="pais"> Bangladesh</li>
-                            <li><input type="radio" name="pais"> Barbados</li>
-                            <li><input type="radio" name="pais"> Bélgica</li>
-                            <li><input type="radio" name="pais"> Belice</li>                <li><input type="radio" name="pais"> Benín</li>               <li><input type="radio" name="pais"> Bielorrusia</li>
-                            <li><input type="radio" name="pais"> Birmania </li>
-                            <li><input type="radio" name="pais"> Bolivia</li>
-                            <li><input type="radio" name="pais"> Bosnia y Herzegovina</li>
-                            <li><input type="radio" name="pais"> Botsuana</li>
-                            <li><input type="radio" name="pais"> Brasil</li>                <li><input type="radio" name="pais"> Brunéi</li>                <li><input type="radio" name="pais"> Bulgaria</li>
-                            <li><input type="radio" name="pais"> Burkina Faso</li>
-                            <li><input type="radio" name="pais"> Burundi</li>
-                            <li><input type="radio" name="pais"> Bután</li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                    
-                    <h2><a id="PaisesConC">C </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="país"> Cabo Verde </li>
-                            <li><input type="radio" name="país"> Camboya    </li>
-                            <li><input type="radio" name="país"> Camerún    </li>
-                            <li><input type="radio" name="país"> Canadá     </li>
-                            <li><input type="radio" name="país"> Catar      </li>
-                            <li><input type="radio" name="país"> Chad       </li>
-                            <li><input type="radio" name="país"> Chile      </li>
-                            <li><input type="radio" name="país"> China      </li>
-                            <li><input type="radio" name="país"> Chipre     </li>
-                            <li><input type="radio" name="país"> Ciudad del Vaticano </li>
-                            <li><input type="radio" name="país"> Colombia            </li>
-                            <li><input type="radio" name="país"> Comoras             </li>
-                            <li><input type="radio" name="país"> Corea del Norte     </li>
-                            <li><input type="radio" name="país"> Corea del Sur       </li>
-                            <li><input type="radio" name="país"> Costa de Marfil     </li>
-                            <li><input type="radio" name="país"> Costa Rica          </li>
-                            <li><input type="radio" name="país"> Croacia             </li>
-                            <li><input type="radio" name="país"> Cuba                </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                    
-                    <h2><a id="PaisesConD">D </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li> <input type="radio" name="pais"> Dinamarca</li>
-                            <li><input type="radio" name="pais"> Dominica</li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                    
-                    <h2><a id="PaisesConE">E </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Ecuador                 </li>
-                            <li><input type="radio" name="pais"> Egipto                  </li>
-                            <li><input type="radio" name="pais"> El Salvador             </li>
-                            <li><input type="radio" name="pais"> Emiratos Árabes Unidos  </li>
-                            <li><input type="radio" name="pais"> Eritrea                 </li>
-                            <li><input type="radio" name="pais"> Eslovaquia              </li>
-                            <li><input type="radio" name="pais"> Eslovenia               </li>
-                            <li><input type="radio" name="pais"> España                  </li>
-                            <li><input type="radio" name="pais"> Estados Unidos          </li>
-                            <li><input type="radio" name="pais"> Estonia                 </li>
-                            <li><input type="radio" name="pais"> Etiopía                 </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConF">F </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Filipinas   </li>
-                            <li><input type="radio" name="pais"> Finlandia   </li>
-                            <li><input type="radio" name="pais"> Fiyi        </li>
-                            <li><input type="radio" name="pais"> Francia     </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConG">G </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Gabón   </li>
-                            <li><input type="radio" name="pais"> Gambia  </li>
-                            <li><input type="radio" name="pais"> Georgia </li>
-                            <li><input type="radio" name="pais"> Ghana   </li>
-                            <li><input type="radio" name="pais"> Granada </li>
-                            <li><input type="radio" name="pais"> Grecia      </li>
-                            <li><input type="radio" name="pais"> Guatemala   </li>
-                            <li><input type="radio" name="pais"> Guinea      </li>
-                            <li><input type="radio" name="pais"> Guinea-Bisáu</li>
-                            <li><input type="radio" name="pais"> Guinea Ecuatorial   </li>
-                            <li><input type="radio" name="pais"> Guyana              </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConH">H </a></h2>            
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Haití       </li>
-                            <li><input type="radio" name="pais"> Honduras    </li>
-                            <li><input type="radio" name="pais"> Hungría     </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConI">I </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> India           </li>
-                            <li><input type="radio" name="pais"> Indonesia       </li>
-                            <li><input type="radio" name="pais"> Irak            </li>
-                            <li><input type="radio" name="pais"> Irán            </li>
-                            <li><input type="radio" name="pais"> Irlanda         </li>
-                            <li><input type="radio" name="pais"> Islandia        </li>
-                            <li><input type="radio" name="pais"> Islas Marshall  </li>
-                            <li><input type="radio" name="pais"> Islas Salomón   </li>
-                            <li><input type="radio" name="pais"> Israel          </li>
-                            <li><input type="radio" name="pais"> Italia          </li>
-                        </ul>    
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConJ">J </a></h2>         
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Jamaica </li>
-                            <li><input type="radio" name="pais"> Japón   </li>
-                            <li><input type="radio" name="pais"> Jordania</li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConJ">J </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Kazajistán  </li>
-                            <li><input type="radio" name="pais"> Kenia       </li>
-                            <li><input type="radio" name="pais"> Kirguistán  </li>
-                            <li><input type="radio" name="pais"> Kiribati    </li>
-                            <li><input type="radio" name="pais"> Kuwait      </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConL">L </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Laos            </li>
-                            <li><input type="radio" name="pais"> Lesoto          </li>
-                            <li><input type="radio" name="pais"> Letonia         </li>
-                            <li><input type="radio" name="pais"> Líbano          </li>
-                            <li><input type="radio" name="pais"> Liberia         </li>
-                            <li><input type="radio" name="pais"> Libia           </li>
-                            <li><input type="radio" name="pais"> Liechtenstein   </li>
-                            <li><input type="radio" name="pais"> Lituania        </li>
-                            <li><input type="radio" name="pais"> Luxemburgo      </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConM">M </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Macedonia   </li>
-                            <li><input type="radio" name="pais"> Madagascar  </li>
-                            <li><input type="radio" name="pais"> Malasia     </li>
-                            <li><input type="radio" name="pais"> Malaui      </li>
-                            <li><input type="radio" name="pais"> Maldivas    </li>
-                            <li><input type="radio" name="pais"> Malí        </li>
-                            <li><input type="radio" name="pais"> Malta       </li>
-                            <li><input type="radio" name="pais"> Marruecos   </li>
-                            <li><input type="radio" name="pais"> Mauricio    </li>
-                            <li><input type="radio" name="pais"> Mauritania  </li>
-                            <li><input type="radio" name="pais"> México      </li>
-                            <li><input type="radio" name="pais"> Micronesia  </li>
-                            <li><input type="radio" name="pais"> Moldavia    </li>
-                            <li><input type="radio" name="pais"> Mónaco      </li>
-                            <li><input type="radio" name="pais"> Mongolia    </li>
-                            <li><input type="radio" name="pais"> Montenegro  </li>
-                            <li><input type="radio" name="pais"> Mozambique  </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConN">N </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Namibia     </li>
-                            <li><input type="radio" name="pais"> Nauru       </li>
-                            <li><input type="radio" name="pais"> Nepal       </li>
-                            <li><input type="radio" name="pais"> Nicaragua   </li>
-                            <li><input type="radio" name="pais"> Níger       </li>
-                            <li><input type="radio" name="pais"> Nigeria     </li>
-                            <li><input type="radio" name="pais"> Noruega     </li>
-                            <li><input type="radio" name="pais"> Nueva Zelanda </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                    
-                    <h2><a id="PaisesConO">O </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Omán </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConP">P </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Países Bajos</li>
-                            <li><input type="radio" name="pais"> Pakistán    </li>
-                            <li><input type="radio" name="pais"> Palaos      </li>
-                            <li><input type="radio" name="pais"> Panamá      </li>
-                            <li><input type="radio" name="pais"> Papúa Nueva Guinea </li>
-                            <li><input type="radio" name="pais"> Paraguay    </li>
-                            <li><input type="radio" name="pais"> Perú        </li>
-                            <li><input type="radio" name="pais"> Polonia     </li>
-                            <li><input type="radio" name="pais"> Portugal    </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConQ">Q </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>      
-
-                    <h2><a id="PaisesConR">R </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Reino Unido </li>
-                            <li><input type="radio" name="pais"> República Centroafricana </li>
-                            <li><input type="radio" name="pais"> República Checa </li>
-                            <li><input type="radio" name="pais"> República del Congo </li>
-                            <li><input type="radio" name="pais"> República Dominicana </li>
-                            <li><input type="radio" name="pais"> República Sudafricana </li>
-                            <li><input type="radio" name="pais"> Ruanda </li>
-                            <li><input type="radio" name="pais"> Rumania </li>
-                            <li><input type="radio" name="pais"> Rusia </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConS">S </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Samoa </li>
-                            <li><input type="radio" name="pais"> San Cristóbal y Nieves </li>
-                            <li><input type="radio" name="pais"> San Marino </li>
-                            <li><input type="radio" name="pais"> San Vicente y las Granadinas </li>
-                            <li><input type="radio" name="pais"> Santa Lucía </li>
-                            <li><input type="radio" name="pais"> Santo Tomé y Príncipe </li>
-                            <li><input type="radio" name="pais"> Senegal </li>
-                            <li><input type="radio" name="pais"> Serbia </li>
-                            <li><input type="radio" name="pais"> Seychelles </li>
-                            <li><input type="radio" name="pais"> Sierra Leona </li>
-                            <li><input type="radio" name="pais"> Singapur </li>
-                            <li><input type="radio" name="pais"> Siria </li>
-                            <li><input type="radio" name="pais"> Somalia </li>
-                            <li><input type="radio" name="pais"> Sri Lanka </li>
-                            <li><input type="radio" name="pais"> Suazilandia </li>
-                            <li><input type="radio" name="pais"> Sudán </li>
-                            <li><input type="radio" name="pais"> Sudán del Sur </li>
-                            <li><input type="radio" name="pais"> Suecia </li>
-                            <li><input type="radio" name="pais"> Suiza </li>
-                            <li><input type="radio" name="pais"> Surinam </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConT">T </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Tailandia </li>
-                            <li><input type="radio" name="pais"> Tanzania </li>
-                            <li><input type="radio" name="pais"> Tayikistán </li>
-                            <li><input type="radio" name="pais"> Timor Oriental </li>
-                            <li><input type="radio" name="pais"> Togo </li>
-                            <li><input type="radio" name="pais"> Tonga </li>
-                            <li><input type="radio" name="pais"> Trinidad y Tobago </li>
-                            <li><input type="radio" name="pais"> Túnez </li>
-                            <li><input type="radio" name="pais"> Turkmenistán </li>
-                            <li><input type="radio" name="pais"> Turquía </li>
-                            <li><input type="radio" name="pais"> Tuvalu </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConU">U </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Ucrania </li>
-                            <li><input type="radio" name="pais"> Uganda </li>
-                            <li><input type="radio" name="pais"> Uruguay </li>
-                            <li><input type="radio" name="pais"> Uzbekistán </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConV">V </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Vanuatu </li>
-                            <li><input type="radio" name="pais"> Venezuela </li>
-                            <li><input type="radio" name="pais"> Vietnam </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConW">W </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            Lorem ipsum dolor sit amet.
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConY">Y </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Yemen </li>
-                            <li><input type="radio" name="pais"> Yibuti </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-
-                    <h2><a id="PaisesConZ">Z </a></h2>
-                    <div class="listaDePaises">
-                        <ul>
-                            <li><input type="radio" name="pais"> Zambia </li>
-                            <li><input type="radio" name="pais"> Zimbabue </li>
-                        </ul>
-                        <input type="submit" value="Filtrar"id="BotonFiltrar">
-                    </div>
-                </form>
-            
-            </div>
-
-
+        </div>
     </main>
 
     <footer>
         <div>
-            <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
+            Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024
         </div>
         <div>
             <a href="mailto:nalattanzio@gmail.com">
                 <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
                 
-                <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
-
-                <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
-
-            <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
-
-
+            <a target="_blank" href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
+  
+            <a target="_blank" href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
+  
+            <a target="_blank" href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
         </div>
     </footer>
-
+  
 </body>
 
 </html>

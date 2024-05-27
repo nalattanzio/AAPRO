@@ -1,62 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Tahoma;    
-    list-style: none
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../imagenes/fondo.png);
-    height: 100vh;
-    background-size: 100%;
-    background-repeat:repeat-y;
-    
-}
-
-.cabecera{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    justify-content:space-between;
-    padding: 0 1%;
-}
-
-.cabecera p{
-    font-size: 2.2rem;
-    font-weight: bolder;
-    color: red;
-    text-align: center;
-    padding: 1%;
-}
-
-.MenuOpciones{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.MenuOpciones a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: bold;
-    align-items: center;
-    color: red;
-    padding: 6px 3px;
-}
-
-.MenuOpciones a:hover{
-    transition: all 0.5s;
-    height: 100px;
-    background-color: red;
-    color: black;
-    border-radius: 6px;
-}
-
 main{
     display: flex;
     flex-direction: column;
@@ -71,6 +12,7 @@ main{
 
 .Ingreso h1{
     padding: 15px;
+    margin-top: 100px;
 }
 
 #nombreGenero{
@@ -79,13 +21,15 @@ main{
 }
 
 #BotonFiltrar{
-    font-size: 16px;
+    font-size: 1em;
     width: 120px;
-    height: 25px;
+    height: 30px;
+    border-radius: 5%;
+    border-width: 3px;
 }
 
 #BotonFiltrar:hover{
-    background-color: red;
+    background-color: rgb(220, 53, 69);
 }
 
 .Respuesta{
@@ -95,10 +39,7 @@ main{
     padding: 15px 0;
     border: 2px black solid;
     box-shadow: 5px 10px 10px 4px grey;
-    background-color: rgba(255, 0, 0, 0.1)
-}
-
-.Respuesta p{
+    background-color: rgba(255, 0, 0, 0.1);
     font-style: italic;
     font-size: 20px;
     font-weight: lighter;
@@ -107,29 +48,7 @@ main{
     padding: 20px;
 }
 
-.Respuesta	p:hover{
+.Respuesta:hover{
     color: red;
     font-style: normal;
-}
-
-footer{
-    display: flex;
-    margin-top: auto;
-    align-items:center;
-    justify-content: space-between;
-    height: 60px;
-    padding: 20px;
-    color: red;
-    background-color: black;
-}
-
-footer img{
-    width: 30px;
-    height: auto;
-    border-radius: 50%;
-}
-
-footer:hover{
-    transition: all 0.2s;
-    font-size: 20px;
 }

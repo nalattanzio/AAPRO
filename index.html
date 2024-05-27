@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WF Principal</title>
-    <link rel="stylesheet" href="./estilos/index.css">
-</head>
-
-<body>
-
-    <header class="cabecera" id="indice">
-
-        <p>WikiFilms, la web de los cinéfilos</p>
-
-        <nav>                    
-            <ul class="MenuOpciones">
-                <li><a href="./actores.html">Actores/Actrices</a></li>
-                <li><a href="./anios.html">Años de estreno</a></li>                
-                <li><a href="./directores.html">Directores</a></li>                
-                <li><a href="./generos.html">Géneros</a></li>     
-                <li><a href="./paises.html">Paises</a></li>
-                <li><a href="./peliculas.html">Películas</a></li>                
-                <li><a href="./contacto.html">Contacto</a></li>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WF Principal</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./estilos/index.css">
+      <!--<script src="./funciones.js"></script> -->
+  </head>
+  
+  <body>
+    <header id="indice">
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand titulo" href="#">WikiFilms</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./actores.html">Actores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./directores.html">Directores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./anios.html">Estreno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./generos.html">Géneros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paises.html">Países</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./peliculas.html">Películas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Suscribirse</a>
+              </li>
             </ul>
-        </nav>
-
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section>
+      <!--<h2>Página Principal</h2>-->
 
-            <h2>Página Principal</h2>
-
-            <div class="contenedor">
-
-
-                <div class="p1">
-                    <img src="./imagenes/BohemianRapsodie.png" alt="">
-                    <p>
-                        <b><u>Titulo Original:</u></b><br><br>
-                        <b><u>Año de estreno:</u></b><br><br>
-                        <b><u>País:</u></b><br><br>
-                        <b><u>Director:</u></b><br><br>
-                        <b><u>Protagonistas:</u></b><br><br>
-                        <b><u>Productores:</u></b><br><br>
-                        <b><u>Calificación:</u></b><br><br>
-                        <b><u>Género:</u></b><br><br>
-                        <b><u>Sinopsis:</u></b><br><br>
-                    </p>
-                </div>
-                
-                <div class="p2">
-                    <img src="./imagenes/Alien.png" alt="">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, aliquid, blanditiis dicta neque amet quod repudiandae excepturi iusto laboriosam corrupti, reprehenderit ipsa deleniti asperiores? Quidem nemo tempora nobis soluta distinctio!
-                </div>
-                
-                <div class="p3">
-                    <img src="./imagenes/CuentoChino.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, aliquid, blanditiis dicta neque amet quod repudiandae excepturi iusto laboriosam corrupti, reprehenderit ipsa deleniti asperiores? Quidem nemo tempora nobis soluta distinctio!
-                    </p>
-                </div>
-                
-                <div class="p4">
-                    <img src="./imagenes/VolverAlFuturo.png" alt="">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, aliquid, blanditiis dicta neque amet quod repudiandae excepturi iusto laboriosam corrupti, reprehenderit ipsa deleniti asperiores? Quidem nemo tempora nobis soluta distinctio!
-                </div>
-
-                <div class="p5">
-                    <img src="./imagenes/SupremaciaBourne.png" alt="">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, aliquid, blanditiis dicta neque amet quod repudiandae excepturi iusto laboriosam corrupti, reprehenderit ipsa deleniti asperiores? Quidem nemo tempora nobis soluta distinctio!
-                </div>
-
-            </div>
-
-        </sections>
-        
+      <div class="contenedor">
+        <div class="tarjeta">
+          <img src="./imagenes/BohemianRapsodie.png" alt="">
+          <div>
+              Titulo Original:<br>
+              Año de estreno:<br>
+              País:<br>
+              Director:<br>
+              Protagonistas:<br>
+              Productores:<br>
+              Calificación:<br>
+              Género:<br>
+              Sinopsis:<br>
+          </div>
+        </div>
+        <div class="tarjeta">
+            <img src="./imagenes/Alien.png" alt="">
+            <p>
+                <b><u>Titulo Original:</u></b><br>
+                <b><u>Año de estreno:</u></b><br>
+                <b><u>País:</u></b><br>
+                <b><u>Director:</u></b><br>
+                <b><u>Protagonistas:</u></b><br>
+                <b><u>Productores:</u></b><br>
+                <b><u>Calificación:</u></b><br>
+                <b><u>Género:</u></b><br>
+                <b><u>Sinopsis:</u></b><br>
+            </p>
+        </div>
+        <div class="tarjeta">
+            <img src="./imagenes/CuentoChino.png" alt="">
+            <p>
+                <b><u>Titulo Original:</u></b><br>
+                <b><u>Año de estreno:</u></b><br>
+                <b><u>País:</u></b><br>
+                <b><u>Director:</u></b><br>
+                <b><u>Protagonistas:</u></b><br>
+                <b><u>Productores:</u></b><br>
+                <b><u>Calificación:</u></b><br>
+                <b><u>Género:</u></b><br>
+                <b><u>Sinopsis:</u></b><br>
+            </p>
+        </div>
+        <div class="tarjeta">
+            <img src="./imagenes/VolverAlFuturo.png" alt="">
+            <p>
+                <b><u>Titulo Original:</u></b><br>
+                <b><u>Año de estreno:</u></b><br>
+                <b><u>País:</u></b><br>
+                <b><u>Director:</u></b><br>
+                <b><u>Protagonistas:</u></b><br>
+                <b><u>Productores:</u></b><br>
+                <b><u>Calificación:</u></b><br>
+                <b><u>Género:</u></b><br>
+                <b><u>Sinopsis:</u></b><br>
+            </p>
+        </div>
+        <div class="tarjeta">
+            <img src="./imagenes/SupremaciaBourne.png" alt="">
+            <p>
+                <b><u>Titulo Original:</u></b><br>
+                <b><u>Año de estreno:</u></b><br>
+                <b><u>País:</u></b><br>
+                <b><u>Director:</u></b><br>
+                <b><u>Protagonistas:</u></b><br>
+                <b><u>Productores:</u></b><br>
+                <b><u>Calificación:</u></b><br>
+                <b><u>Género:</u></b><br>
+                <b><u>Sinopsis:</u></b><br>
+            </p>
+        </div>
+      </div>
     </main>
-    
+      
     <footer>
+      <div>
+          Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024
+      </div>
+      <div>
+          <a href="mailto:nalattanzio@gmail.com">
+              <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
+              
+          <a target="_blank" href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
 
-        <div>
-            <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
-        </div>
+          <a target="_blank" href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
 
-        <div>
-            <a href="mailto:nalattanzio@gmail.com">
-                <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
-                
-                <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
-
-                <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
-
-            <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
-        </div>
-
+          <a target="_blank" href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
-
-
-<!-- LISTA DESPLEGABLE + CUADRO DE TEXTO + BOTON BUSCAR
-    <label for="CampoBusqueda">Parámetros de búsqueda:</label>
-    <select id="CampoBusqueda">
-        <option>Título</option>
-        <option>Género</option>
-        <option>Director</option>
-        <option>Año de estreno</option>
-        <option>País</option>
-        <option>Actor protagonista</option>
-    </select>
-    <input type="text">
-    <input type="button" value="Buscar">
--->
-

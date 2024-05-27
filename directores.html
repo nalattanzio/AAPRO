@@ -4,100 +4,121 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WF Directores</title>
+        <title>WikiFilms -> Directores</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./estilos/index.css">
         <link rel="stylesheet" href="./estilos/directores.css">
+        <!--<script src="./funciones.js"></script> -->
     </head>
 
     <body>
-
-        <header class="cabecera">
-
-            <p>WikiFilms, la web de los cinéfilos</p>
-
-            <nav>                    
-                <ul class="MenuOpciones">
-                    <li><a href="./actores.html">Actores/Actrices</a></li>                
-                    <li><a href="./anios.html">Años de estreno</a></li>                
-                    <li><a href="./generos.html">Géneros</a></li>     
-                    <li><a href="./paises.html">Países de origen</a></li>                
-                    <li><a href="./peliculas.html">Películas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./index.html">Página principal</a></li>
-                </ul>
+        <header id="cabecera">
+            <nav class="navbar navbar-expand-lg bg-danger">
+              <div class="container-fluid">
+                <a class="navbar-brand titulo" href="./index.html">WikiFilms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./actores.html">Actores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./directores.html">Directores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./anios.html">Estreno</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./generos.html">Géneros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./paises.html">Países</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./peliculas.html">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./contacto.html">Suscribirse</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-
         </header>
 
         <main>
-            
-            <section class="Ingreso">
-                <h1>Búsqueda de películas por Director</h1>
+            <div class="encabezado">
+              <p>Búsqueda de películas por nombre de director</p>
+            </div>
 
+            <div class="ingreso">
                 <form action="./directores.html" method="get">
-                    <input type="text" name="nombreDirector" id="director" placeholder="Nombre del director">
-                    <input type="submit" value="Buscar" id="BotonBuscar">
+                  <input type="text" name="nombreDirector" id="director" placeholder="Nombre del director">
+                  <input type="submit" value="Buscar" id="botonBuscar">
                 </form>
-            </section>
+            </div>
 
-            <section class="Respuesta">
-                <div class="Foto">
-                    <img src="./imagenes/Nolan.jpg" alt="Cristopher Nolan">
+            <div class="respuesta">
+                <div class="foto">
+                  <img src="./imagenes/Nolan.jpg" alt="Cristopher Nolan">
                 </div>
 
-                <div class="Bio">
+                <div class="bio">
                     <h2>Biografía</h2>
-                    <br>
-                    <p>
-                        Christopher Edward Nolan es un director de cine, guionista, productor y editor británico. Desarrolló un interés por el cine desde una edad temprana. Después de estudiar literatura inglesa en el University College de Londres, debutó en el largometraje con Following.<br><br>
-                        <u>Nacimiento:</u> 30 de julio de 1970 (edad 53 años), Westminster, Londres, Reino Unido.<br><br>
-                        <u>Premios:</u> Premio Óscar al Mejor Director, MAS<br><br>
-                        <u>Hermanos:</u> Jonathan Nolan, Matthew Francis Nolan<br><br>
-                        <u>Trabajos editados:</u> Journal of a Navvy, Journal of a Jailbird, MAS<br><br>
-                        <u>Hijos:</u> Flora Nolan, Magnus Nolan, Rory Nolan, Oliver Nolan<br><br>
-                        <u>Cónyuge:</u> Emma Thomas (m. 1997).
-                    </p>
+                    <div>
+                      Christopher Edward Nolan es un director de cine, guionista, productor y editor británico. Desarrolló un interés por el cine desde una edad temprana. Después de estudiar literatura inglesa en el University College de Londres, debutó en el largometraje con Following.<br>
+                      <u>Nacimiento:</u> 30 de julio de 1970 (edad 53 años), Westminster, Londres, Reino Unido.<br>
+                      <u>Premios:</u> Premio Óscar al Mejor Director, MAS<br>
+                      <u>Hermanos:</u> Jonathan Nolan, Matthew Francis Nolan<br>
+                      <u>Trabajos editados:</u> Journal of a Navvy, Journal of a Jailbird, MAS<br>
+                      <u>Hijos:</u> Flora Nolan, Magnus Nolan, Rory Nolan, Oliver Nolan<br>
+                      <u>Cónyuge:</u> Emma Thomas (m. 1997).
+                      <br>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam libero architecto debitis excepturi laboriosam velit, numquam totam minima ducimus quaerat repellat distinctio ea quae autem, consequuntur perferendis dolores dicta laudantium, maiores mollitia suscipit odio exercitationem vitae! Repellat beatae libero cupiditate, molestias, neque rerum laborum cum laudantium quisquam quas eum consectetur ad tempora blanditiis error ipsa quia porro eaque et, ullam quis. Est fuga culpa, ut sunt reiciendis saepe autem consequatur officiis, eaque incidunt voluptatibus maiores iure corrupti blanditiis distinctio sapiente eos accusantium consequuntur? Dolorum corrupti nulla quaerat debitis facere corporis optio, earum placeat distinctio facilis iure voluptate expedita voluptatibus quis molestiae ipsam? Ducimus voluptate earum natus voluptatum numquam atque deleniti quas alias suscipit eligendi reprehenderit expedita minus maxime est soluta blanditiis sit animi tempore vel, minima voluptas! Distinctio fuga minus doloribus repellendus. Delectus, modi odio dolor eum quos vitae optio expedita nisi tempore temporibus culpa distinctio atque ipsum enim laudantium iure eius quibusdam veritatis? Non minima ipsa fuga, saepe libero laudantium iusto vel possimus dolorem dolorum doloremque, tenetur ipsam perspiciatis corrupti. Corrupti, unde. Maiores aperiam enim sint sunt consequuntur accusantium nulla! Eligendi ea animi explicabo soluta architecto! Ad, asperiores est. Doloremque numquam iure eum quo maxime asperiores inventore explicabo facilis!
+                    </div>
                 </div>
-
-                <div class="Film">
+            
+                <div class="film">                           
                     <h2>Filmografía</h2>
-                    <br>
-                    <ul>
-                        <a href="#">1997: Doodlebug</a><br>   
-                        <a href="#">1998: Following</a><br>   
-                        <a href="#">2000: Memento</a><br>   
-                        <a href="#">2002: Insomnia</a><br>   
-                        <a href="#">2005: Batman Begins</a><br>   
-                        <a href="#">2006: The prestige</a><br>   
-                        <a href="#">2008: The Dark Knight</a><br>   
-                        <a href="#">2010: Inception</a><br>   
-                        <a href="#">2012: The Dark Knight Rises</a><br>   
-                        <a href="#">2014: Interstellar</a><br>   
-                        <a href="#">2015: Quay</a><br>   
-                        <a href="#">2017: Dunkerque</a><br>   
-                        <a href="#">2020: Tenet​</a><br>   
-                        <a href="#">2023: Oppenheimer</a><br>   
-                    </ul>
+                    <div>
+                        <ul>
+                            <a href="#">1997: Doodlebug</a><br>   
+                            <a href="#">1998: Following</a><br>   
+                            <a href="#">2000: Memento</a><br>   
+                            <a href="#">2002: Insomnia</a><br>   
+                            <a href="#">2005: Batman Begins</a><br>   
+                            <a href="#">2006: The prestige</a><br>   
+                            <a href="#">2008: The Dark Knight</a><br>   
+                            <a href="#">2010: Inception</a><br>   
+                            <a href="#">2012: The Dark Knight Rises</a><br>   
+                            <a href="#">2014: Interstellar</a><br>   
+                            <a href="#">2015: Quay</a><br>   
+                            <a href="#">2017: Dunkerque</a><br>   
+                            <a href="#">2020: Tenet​</a><br>   
+                            <a href="#">2023: Oppenheimer</a><br>   
+                        </ul>
+                    </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer>
+          <div>
+              Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024
+          </div>
+          <div>
+              <a href="mailto:nalattanzio@gmail.com">
+                  <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
+                  
+              <a target="_blank" href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
 
-            <div>
-                <p>Desarrollada por Andrés Lattanzio. &copy; Derechos Reservados. 2024</p>
-            </div>
+              <a target="_blank" href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
 
-            <div>
-                <a href="mailto:nalattanzio@gmail.com">
-                    <img src="./imagenes/gmail-icon-free-png.webp" alt="Gmail"></a>
-                    
-                    <a href="https://www.facebook.com/nalattanzio"><img src="./imagenes/Facebook_Logo.png" alt="TikTok"></a>
-    
-                    <a href="https://www.instagram.com/lattanzioandres/"><img src="./imagenes/instagram-logo.jpg" alt="Gmail"></a>
-    
-                <a href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
-            </div>
-
+              <a target="_blank" href="http://tiktok.com/@nalattanzio72"><img src="./imagenes/logo-tiktok.jpg" alt="TikTok"></a>
+          </div>
         </footer>
     </body>
 </html>

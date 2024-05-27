@@ -1,94 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Tahoma;    
-    list-style: none
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../imagenes/fondo.png);
-    height: 100vh;
-    background-size: 100%;
-    background-repeat:repeat-y;
-    
-}
-
-.cabecera{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    justify-content:space-between;
-    padding: 0 1%;
-}
-
-.cabecera p{
-    font-size: 2.2rem;
-    font-weight: bolder;
-    color: red;
-    text-align: center;
-    padding: 1%;
-}
-
-.MenuOpciones{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.MenuOpciones a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: bold;
-    align-items: center;
-    color: red;
-    padding: 6px 3px;
-}
-
-.MenuOpciones a:hover{
-    transition: all 0.5s;
-    height: 100px;
-    background-color: red;
-    color: black;
-    border-radius: 6px;
-}
-
 main{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 
-.Ingreso{
+.ingreso{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Ingreso h1{
+.ingreso h1{
     padding: 15px;
+    margin-top: 100px;    
 }
 
 #director{
     font-size: 18px;
+    height: 30px;
+    margin-right: 10px;
 }
 
-#BotonBuscar{
-    font-size: 16px;
+#botonBuscar{
+    font-size: 1em;
     width: 120px;
-    height: 25px;
+    height: 30px;
+    border-radius: 5%;
+    border-width: 3px;
 }
 
-#BotonBuscar:hover{
-    background-color: red;
+#botonBuscar:hover{
+    background-color: rgb(220, 53, 69);
 }
 
-.Respuesta{
+.respuesta{
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -98,63 +43,67 @@ main{
     background-color: rgba(255, 0, 0, 0.1)
 }
 
-.Foto{
+.foto{
     width: 15vw;
     height: 350px;
     margin: 10px;
-    text-align: center;
-    vertical-align:middle;
 }
 
-.Foto img{
-    margin: 0 auto;
+.foto{
+    width: 15vw;
+    height: 50vh;
+    margin: 10px;
+}
+
+.foto img{
+    margin: 2px 2px;
     display: flexbox ;
     width: 100%;
 }
 
-.Bio{
+.bio{
     width: 45vw;
-    height: 350px;
+    height: 50vh;
     margin: 10px;
+    padding: 0 10px;
+    font-size: 1fr
+}
+
+.bio h2{
+    margin-bottom: 15px;
+}
+
+.bio div{
+    height: 80%;
+    padding-right: 20px;
     overflow: auto;
 }
 
-.Film{
+.film{
     width: 30vw;
-    height: 350px;
+    height: 50vh;
     margin: 10px;
     overflow: auto;    
+    font-size: 1em;
 }
 
-.Film a{
+.film h2{
+    margin-bottom: 15px;
+}
+
+.film div{
+    height: 80%;
+    padding-right: 20px;
+    overflow: auto;
+}
+
+.film a{
     color: black;
     text-decoration: none;
 }
 
-.Film a:hover{
+.film a:hover{
     color: darkred;
     font-weight: bold;
     text-shadow: 2px;
-}
-
-footer{
-    display: flex;
-    margin-top: auto;
-    align-items:center;
-    justify-content: space-between;
-    height: 60px;
-    padding: 20px;
-    color: red;
-    background-color: black;
-}
-
-footer img{
-    width: 30px;
-    height: auto;
-    border-radius: 50%;
-}
-
-footer:hover{
-    transition: all 0.2s;
-    font-size: 20px;
 }
