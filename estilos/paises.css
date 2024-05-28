@@ -1,3 +1,4 @@
+
 main{
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@ main{
 .indiceAlfabetico a{
     padding: 5px;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .indiceAlfabetico a:hover{

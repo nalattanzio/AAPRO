@@ -40,18 +40,6 @@ body{
     padding: 15px;
 }
 
-@media (max-width: 540px) {
-    .contenedor{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 720px) {
-    .contenedor{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 .tarjeta{
     background-color: rgba(255, 0, 0, 0.1);
     font-size: 0.9rem;
@@ -71,10 +59,10 @@ body{
     width: 80%;
 }
 
-.tarjeta p{
+.tarjeta div{
     display: block;
     width: 90%;
-    margin: 20px 5% 5% 5%;
+    margin: 50px 5% 5% 5%;
 }
 
 footer{
@@ -92,4 +80,27 @@ footer img{
     width: 3cap;
     height: 80%;
     border-radius: 50%;
+}
+
+
+@media (max-width: 760px) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tarjeta div{
+        width: 90%;
+        margin: 25px 5% 5% 5%;
+    }
+    
+}
+
+@media (max-width: 540px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    .tarjeta div{
+        width: 90%;
+        margin: 90px 5% 5% 5%;
+    }
+    
 }
