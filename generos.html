@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./estilos/index.css">
     <link rel="stylesheet" href="./estilos/generos.css">
-    <!--<script src="./funciones.js"></script> -->
+
 </head>
 
 <body>
@@ -57,8 +57,8 @@
 
         <div class="Ingreso">
 
-            <form action="./generos.html" method="get">
-                <select name="genero" id="nombreGenero">
+            <form id="formGeneros">
+                <select id="generos" name="generos">
                     <option value="value1">Acción</option>
                     <option value="value2">Aventura</option>
                     <option value="value3">Comedia</option>
@@ -79,12 +79,12 @@
                     <option value="value18">Histórico</option>
                     <option value="value19">Deportes</option>
                 </select>
-                <input type="submit" value="Filtrar" id="BotonFiltrar">
+                <input type="submit" value="Filtrar" id="botonFiltrar">
             </form>
         </div>
 
         <div class="Respuesta">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa facere praesentium nesciunt consequatur, eaque, vel labore doloremque dolorem tenetur suscipit non, ea deleniti ut veritatis minus deserunt culpa cum amet nobis ex. Quasi in voluptatem molestiae, soluta quibusdam ipsa! Voluptatibus omnis suscipit porro perferendis in laboriosam veniam mollitia at? Consectetur ab dignissimos quos temporibus assumenda dicta tenetur beatae atque quis, veniam sunt reprehenderit voluptatum blanditiis debitis sed enim? Ducimus laudantium esse atque possimus! Labore fuga molestias fugit odit sed illum aperiam accusamus minima corporis repudiandae porro quisquam beatae, nobis nam optio dolores, itaque harum facilis aspernatur voluptates ex totam maiores!
+          <h3 id="generote">GENERO</h3>
         </div>
     </main>
 
@@ -106,4 +106,10 @@
   
 </body>
 
+<script src="./funciones.js"></script>
+
 </html>
+
+<!--
+<button type="button" onclick="mostrarGeneroElegido()">Filtrar</button>
+-->

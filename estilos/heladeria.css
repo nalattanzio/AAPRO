@@ -1,6 +1,5 @@
-*{
-  justify-content: center;
-  justify-items: center;
+body{
+  background-color: orange;
 }
 
 header{
@@ -9,42 +8,67 @@ header{
   justify-content: center;
 }
 
+header p{
+  font-size:xx-large;
+  font-weight: bold;
+  color: green;
+}
+
 .primero{
   display: grid;
-  grid-template-columns: 0.7fr 0.7fr 0.7fr 0.4fr 1.75fr;
-  gap: 5px;
+  grid-template-columns: 20% 20% 20% 5% 35%;
+}
+
+.tamanios, .sabores, .toppings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tamanios{
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(255,128,128);
 }
+
 .sabores{
-  background-color: rgb(158, 158, 158);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(255, 158, 158);
 }
+
 .toppings{
-  background-color: rgb(188, 188, 188);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(255, 188, 188);
 }
+
+p{
+  margin: 5 auto;
+}
+
+#medidas, #gustos, #sabores{
+  margin: 0 0 25px 0;
+}
+
 .boton{
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(255, 218, 218);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .boton button{
   height: 40px;
   width: 80px;
   font-size: 15px;
 }
+
 form{
   margin-bottom: 20px;
+}
+
+.ticket{
+  background-color: whitesmoke;
+  border-top: 3px dotted;
+  border-bottom: 3px dotted;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  margin-left: 10px;
+  padding-left: 10px;
 }
